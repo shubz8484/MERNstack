@@ -1,53 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-  }
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: sans-serif;
+  background-image: linear-gradient(120deg, #df8f26, #828087);
+  min-height: 100vh;
+}
 
-  .container {
-    max-width: 400px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+.container {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px #fdbfbf;
+}
 
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
 
-  form {
-    margin-bottom: 20px;
-  }
+.text {
+  text-align: left;
+  font-weight: 500;
+  margin-left: 150px;
+}
 
-  label {
-    font-weight: bold;
-  }
+#w,
+#h {
+  color: #222f3e;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 200;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #341f97;
+  width: 200px;
+}
 
-  input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+#w:focus,
+#h:focus {
+  border-bottom: 2px solid #341f97;
+  width: 300px;
+  transition: 0.5s;
+}
 
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-  }
+#result {
+  color: #341f97;
+}
 
-  button:hover {
-    background-color: #0056b3;
-  }
+#btn {
+  font-family: inherit;
+  margin-top: 10px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(120deg, #df8f26, #828087);
+  width: 150px;
+  padding: 10px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
 
-  #result {
-    text-align: center;
-    font-weight: bold;
-  }
+#btn:hover {
+  box-shadow: 1px 1px 10px #341f97;
+}
+
+#info {
+  font-size: 12px;
+  font-family: inherit;
+  margin-top: 15px;
+}
